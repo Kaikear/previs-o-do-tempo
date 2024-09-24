@@ -1,0 +1,187 @@
+/* Estilos globais */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos do cabeçalho */
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  header button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  header button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Estilos da seção de clima atual */
+  
+  .current-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .temperature .value {
+    font-size: 64px;
+  }
+  
+  .temperature .units {
+    font-size: 24px;
+  }
+  
+  .details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .details li {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos da seção de previsão */
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .tabs button.active {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .tabs button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .forecast {
+    margin-bottom: 20px;
+  }
+  
+  .chart {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .chart svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .temperature-line {
+    stroke: #4CAF50;
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  .labels {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .labels li {
+    margin-bottom: 10px;
+  }
+  
+  .labels span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .hourly {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hourly li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .hourly .time {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .hourly .day {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .hourly img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .hourly .temperature {
+    font-size: 18px;
+    font-weight: bold;
+  }
